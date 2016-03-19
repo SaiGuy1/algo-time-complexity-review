@@ -1,8 +1,8 @@
 /////////// Prompt 1 ///////////
 /////////// time complexity: 
-function findMax(array){
+function findMax(array){  // n = array.length
   var max = -Infinity;
-  for (var i = 0; i < array.length; i++){
+  for (var i = 0; i < array.length; i++){  
     if (array[i] > max){
       max = array[i];
     }
@@ -10,12 +10,15 @@ function findMax(array){
   return max; 
 }
 
-
+// (1+1)*n + 1 + 1 = 2n + 2
+ 
 /////////// Prompt 2 ///////////
 /////////// time complexity: 
-function contains(array, target){
+function contains(array, target){ // n = array.length
   return array.indexOf(target) > -1;
 }
+
+// n 
 
 
 /////////// Prompt 3 ///////////
@@ -23,6 +26,8 @@ function contains(array, target){
 function partialContains(array, target, start){
   return array.slice(start).indexOf(target) > -1;
 }
+
+// 2n
 
 
 /////////// Prompt 4 ///////////
@@ -33,6 +38,8 @@ function square(array){
   }
   return array;
 }
+
+// constant O1
 
 /////////// Prompt 5 ///////////
 /////////// time complexity: 
@@ -46,8 +53,12 @@ function repeat(array){
   }
   return repeat; 
 }
-//what if we replace 10 with a parameter? 
 
+// n
+
+
+//what if we replace 10 with a parameter? 
+// n^2
 
 /////////// Prompt 6 ///////////
 /////////// time complexity: 
@@ -64,6 +75,8 @@ function gcf(num1, num2){
   }
   return 1;
 }
+
+// n
 
 
 /////////// Prompt 7 ///////////
@@ -87,6 +100,8 @@ function countChar(string){
 }
 
 
+// linear n
+
 /////////// Prompt 8 ///////////
 /////////// time complexity: 
 var factorial = function(num){
@@ -100,6 +115,8 @@ var factorial = function(num){
   }
 }
 
+
+// n linear
 
 /////////// Prompt 9 ///////////
 /////////// time complexity: 
@@ -118,6 +135,7 @@ function tournament(players){
   }
 }
 
+// logrithimic log(n)
 
 
 /////////// Prompt 10 ///////////
@@ -139,6 +157,8 @@ function allPasswords(allowedChars, maxLength){
   findPassword([]);
   return results;
 }
+
+// exponentional OCn
 
 
 /////////// Prompt 11 ///////////
@@ -186,7 +206,7 @@ function findColor(quadTree, coordinates){
   }
 }
 
-
+// logramithic 
 
 /////////// Bonus! ///////////
 /////////// time complexity: 
@@ -208,6 +228,7 @@ function tournamentRedux(players){
   }
 }
 
+// exponential
 
 
 
